@@ -1,0 +1,26 @@
+using System;
+using static System.Console;
+class CheckCredit
+{
+
+    static void Main()
+    {
+        string shurricane;
+        int hurricane;
+        shurricane = ReadLine();
+        hurricane = Convert.ToInt32(shurricane);
+
+        if (hurricane >= 157)
+            WriteLine("This is a category 5 hurricane");
+        else if (hurricane < 157 && hurricane >= 130)
+            WriteLine("This is a category 4 hurricane");
+        else if (hurricane < 130 && hurricane >= 111)
+            WriteLine("This is a category 3 hurricane");
+        else if (hurricane < 111 && hurricane >= 96)
+            WriteLine("This is a category 2 hurricane");
+        else if (hurricane < 96 && hurricane >= 74)
+            WriteLine("This is a category 1 hurricane");
+        else 
+            WriteLine("This is not a hurricane");
+    }
+}
